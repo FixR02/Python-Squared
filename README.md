@@ -37,6 +37,7 @@ If using some format other than a notebook, make sure your README explains your 
 
 -
 **Instructions**
+
 Download and install Python on your computer by going to [Python's download page](https://www.python.org/downloads/) 
 and downloading the latest release for your system (PC, Mac, Linux, etc.) Run the installer afterwards.
 
