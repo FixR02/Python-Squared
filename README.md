@@ -36,5 +36,12 @@ If using some format other than a notebook, make sure your README explains your 
 
 
 -
-**Special Instructions**
+**Instructions**
+Download and install Python on your computer by going to [Python's download page](https://www.python.org/downloads/) 
+and downloading the latest release for your system (PC, Mac, Linux, etc.) Run the installer afterwards.
+
+Then download this ZIP
+Afterwards, open up a command prompt (on Windows, the standard prompt or Windows PowerShell will do)
+and type "python" (without quotes) then hit Enter/Return.
+
 
