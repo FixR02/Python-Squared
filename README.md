@@ -40,8 +40,17 @@ If using some format other than a notebook, make sure your README explains your 
 Download and install Python on your computer by going to [Python's download page](https://www.python.org/downloads/) 
 and downloading the latest release for your system (PC, Mac, Linux, etc.) Run the installer afterwards.
 
-Then download this ZIP
-Afterwards, open up a command prompt (on Windows, the standard prompt or Windows PowerShell will do)
-and type "python" (without quotes) then hit Enter/Return.
+Then download this ZIP from the main repo screen on GitHub by clicking the *green Code button* and selecting the bottom option,
+"Download ZIP". Once downloaded, *unzip* it. My preferred method is [7-Zip](https://www.7-zip.org/download.html); download the
+.exe for your system and install it. Then, *right-click* on the Python Squared ZIP in your Downloads folder and hover over
+the new 7-Zip option. Click the submenu that says "Extract to 'Python Squared\'" and wait just a moment.
+You can keep the folder wherever you want, but it'll be easier for the next part to place it on the *desktop*,
+so move it there (click and drag, cut/copy and paste through the file explorer, whatever you prefer).
 
+Afterwards, open up a command prompt (on Windows, the standard prompt or Windows PowerShell will do).
+Redirect where the prompt is looking by typing "cd "Desktop\Python Squared"" (without the outer quotes;
+if you have the file somewhere else, redirect it there instead) and hit Enter/Return.
+Your prompt is now where it needs to be, so type "python python_squared.py" (again, without quotes)
+and hit Enter/Return.
 
+From there, just follow the instructions as the script itself tells you! Enjoy!
