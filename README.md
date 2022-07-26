@@ -48,7 +48,8 @@ the new 7-Zip option. Click the submenu that says "Extract to 'Python Squared\'"
 You can keep the folder wherever you want, but it'll be easier for the next part to place it on the *desktop*,
 so move it there (click and drag, cut/copy and paste through the file explorer, whatever you prefer).
 
-Afterwards, open up a command prompt (on Windows, the standard prompt or Windows PowerShell will do).
+Afterwards, open up a command prompt (on Windows, the standard prompt or Windows PowerShell will do, this is
+easiest by opening the Start Menu and searching for it).
 Redirect where the prompt is looking by typing "cd "Desktop\Python Squared"" (without the outer quotes;
 if you have the file somewhere else, redirect it there instead) and hit Enter/Return.
 Your prompt is now where it needs to be, so type "python python_squared.py" (again, without quotes)
