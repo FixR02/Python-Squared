@@ -34,6 +34,9 @@ If using some format other than a notebook, make sure your README explains your 
 
 **Required Packages**
 
+None. This script was written on the latest release of Python 3.7, and that version should be used to run the program on other devices.
+Older versions of Python may cause issues. If you already have Python installed on your device, be sure it is up to date; back up
+your other installation if you prefer to use an older version.
 
 -
 **Instructions**
