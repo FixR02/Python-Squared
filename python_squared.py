@@ -19,9 +19,11 @@ print("\nThis is a quick tutorial sequence that will show you a few of Python's 
 time.sleep(2)
 print("\nIf you find this isn't for you, that's okay! I hope this might make that decision easier.")
 time.sleep(1)
+input("Press Enter/Return to continue.")
 print("\nStep 1: Your First Print\n\nMany tutorials begin with the user typing the function:\nprint('Hello, world!') into Python and watching it do so.")
 time.sleep(2)
 print("\nFor this tutorial, you'll be able to see letters and numbers\nyou input be printed out, though as this is a completed script\nit'll work differently.")
+input("Press Enter/Return to continue.")
 print("\nHello, world!")
 time.sleep(2)
 print("\nThat's what happens when the script does the beginner's function.\nAs you might notice, it just happened. It was already in the script,\nand you didn't get to do it yourself.")
@@ -57,6 +59,7 @@ print("\nBehind the scenes was a function that, while you told it to keep going,
 time.sleep(1)
 print("\nUser inputs will be key to this tutorial.\nThat way, you can see the fruits of your labor right away.")
 time.sleep(3)
+input("Press Enter/Return to continue.")
 
 #Tuple tutorial; referencing parts of one
 print("You might have noticed a mention of variables earlier.\nWell, let's talk about that. Rather, sets of variables as used in Python:\ntuples, lists, and dicts.")
@@ -65,11 +68,13 @@ print("\nFirst are tuples. These are sets that are bounded by parentheses, like 
 T = (1, 2, 3, 4, 5)
 print("T = (1, 2, 3, 4, 5) <-- Like this.")
 time.sleep(2)
-print("\nJust name a variable and assign it a tuple of whatveer length.\nPython does require some restrictions regarding this, though.")
+print("\nJust name a variable and assign it a tuple of whatever length.\nPython does require some restrictions regarding this, though.")
 print("Variables need to be one word, or at least contain no spaces, instead underscores must be used. They cannot start with special characters or numbers.")
 time.sleep(2)
 print("\nMost Python scriptwriters will format variables like so: var_a.\ncamelCase is also an option, like so: varA.\nHowever most will opt for the first one, and if you would rather use camelCase, keep it consistent.")
 time.sleep(3)
+input("Press Enter/Return to continue.")
+
 print("\nBack to tuples, and the most important distinction about them is that\nthey are immutable. In layman's terms, they cannot be changed after you\ncreate them.")
 time.sleep(1)
 print("\nIndividual parts of a tuple can be referenced by typing in this: the name of the tuple, and in brackets, the index.")
@@ -91,8 +96,9 @@ print("\nAlternatively, slices can be one-sided, that is, if one number is left 
 time.sleep(2)
 print("\nIf one part of a slice is blank, it automatically begins at index 0\nfor the first number, or ends at the last index for the second.")
 time.sleep(1)
-print("\nA quick note: tuples can also have words, or in Python, strings, as their subvariables,\nbut mixing them up with numbers tends to cause problems.\nFor this tutorial, we'll stick to numbers.")
+print("\n(A quick note: tuples can also have words, or in Python, strings, as their subvariables,\nbut mixing them up with numbers tends to cause problems.\nFor this tutorial, we'll stick to numbers.)")
 time.sleep(2)
+input("Press Enter/Return to continue.")
 
 #List tutorial; building your own data
 print("\nThat's a tuple! While situational, it has its uses. Let's move on to lists, as I think they're much better- and interactable for you.")
@@ -105,6 +111,7 @@ time.sleep(1)
 print("\nWhat makes a list useful is that it's mutable,\nwhich means it can be changed, added onto, cut down, et cetera, after it's defined.\nYou can even make an empty list to start and add onto it.")
 time.sleep(2)
 print("I've defined a list already with the variable L. It's empty, so let's have you add onto it!")
+input("Press Enter/Return to continue.")
 list_data = ""
 print("\nGo and get some data: maybe the height of your family, or your ages, or your favorite numbers, or something made up! Anything is fine.")
 time.sleep(1)
@@ -114,19 +121,25 @@ while list_data != 'done':
     
     if list_data != 'done':
         L.append(list_data)
+        print(L)
 
 
 time.sleep(2)
 print("If you want to remove some data, you can: I'll give you a chance, too.")
+list_data = ""
+time.sleep(2)
+print(L)
 
 while list_data != 'done':
     list_data = input("Enter a number you put into the data set. Each time you use this, it will remove the first instance of it.\nOr, just enter 'done' to move on: ")
     
     if list_data != 'done':
         L.remove(list_data)
+        print(L)
 
 #dicts tutorial, and increasing complexity
 time.sleep(2)
+input("Press Enter/Return to continue.")
 print("\nThat looks like some good data. We'll come back to this in a bit. First, I'd like to go over one more set type: dicts.")
 time.sleep(2)
 print("\nDicts, short for dictionaries, are a more complex version of data sets.\nYou know how a dictionary defines words, right? Well, Python dictionaries work much the same.")
@@ -136,11 +149,68 @@ time.sleep(2)
 print("\nWhat sets dicts apart is that their subvariables come in pairs.\nD = {k1:v1, k2:v2} <-- Like this.")
 D = {1:'Alpha', 2:'Bravo', 3:'Charlie', 4:'Delta', 5:'Echo', 6:'Foxtrot', 7:'Golf', 8:'Hotel', 9:'India', 10:'Juliet', 11:'Kilo', 12:'Lima', 13:'Mike', 14:'November', 15:'Oscar', 16:'Papa', 17:'Quebec', 18:'Romeo', 19:'Sierra', 20:'Tango', 21:'Uniform', 22:'Victor', 23:'Whiskey', 24:'X-Ray', 25:'Yankee', 26:'Zulu'}
 time.sleep(2)
+input("Press Enter/Return to continue.")
 print("\nThat's what it means by defining: k1 and v1 are shorthand for key 1 and variable 1.\nWhen referencing with D[k1], v1 will appear.\nThis also means the 0 index doesn't apply- the index is whatever we set the keys\nas when we define the dict.")
 time.sleep(1)
 print("\nBoth keys and values can be numbers or strings: for example, H is the eighth letter in the English alphabet.\nWe can put this in a dict like so: alpha = {8:'H'}, or alpha = {'H':8}.")
 time.sleep(1)
 print("Note that strings must be surrounded by single or double quotes.\nIf not, Python will try to call variables, and if they haven't been defined, it'll break.")
+input("Press Enter/Return to continue.")
 #Calling dict keys tutorial
 time.sleep(2)
-print("\nLet's practice calling keys ourselves.\nI've defined a dict D with the keys as numbers 1 through 26 and the variables as the aviation alphabet.")
+print("\nLet's practice calling keys ourselves.\nI've defined a dict D with the keys as numbers 1 through 26 and the variables as the aviation alphabet,\nwhich is used to better distinguish individual letters.")
+time.sleep(3)
+print("\nWe'll reference 3 keys of your choice, and print them out.")
+time.sleep(1)
+avialph_1 = D[int(input("Input a number from 1-26 here: "))]
+print(avialph_1)
+avialph_2 = D[int(input("Input a number from 1-26 here: "))]
+print(avialph_2)
+avialph_3 = D[int(input("Input a number from 1-26 here: "))]
+print(avialph_3)
+time.sleep(2)
+input("Press Enter/Return to continue.")
+print("Once you get into the thick of it, it really isn't too hard. That's Python for you.\nShallow at the start, and while it gets deep, you don't have to dive far to learn a lot.")
+time.sleep(2)
+print("\nHow about we do a bit of math? Use Python to learn something about that list you made earlier?")
+time.sleep(1)
+
+print(L)
+list_data = ""
+print("Here's your list as it is now. I'll give you one more chance to change it.")
+
+
+#Doing math and data analysis on some user-entered data; one extra chance to change the data being used
+while list_data != 'done':
+    list_data = input("Enter a number to add, or type 'done' to finish: ")
+    
+    if list_data != 'done':
+        L.append(list_data)
+        print(L)
+        
+           
+print(L)
+print("Here's your list again. Remove what you don't need; keep at least 5 numbers.")
+
+while list_data != 'done':
+    list_data = input("Enter a value from the list above to remove, or type 'done' to finish: ")
+    
+    if list_data != 'done':
+        L.remove(list_data)
+        print(L)
+        
+time.sleep(2)
+input("Press Enter/Return to continue.")
+print("Now that your data is ready, let's learn... something about it.")
+print("\nPython comes with several modules included in the install,\nand plenty more online made by third parties. We'll use a couple to understand your data.")
+time.sleep(2)
+print("\nAt the beginning of the script, behind the scenes, \nI imported the math and statistics modules.")
+print("(Importing a module is as simple as typing import /module/,\nwith /module/ being the name of the module you want imported. You can also use the from command,\nformatted from /module/ import /function/, to import just certain parts of a module.)")
+time.sleep(3)
+print("\nThere's a huge list of functions we can use from these modules.\nWe could find factorials, square roots, permutations, exponents and logarithms, trigonometrics, et cetera.")
+input("Press Enter/Return to continue.")
+time.sleep(3)
+print("\nDepending on your data and its context it could be useful\nto run any one of these functions and then some. For this tutorial, we'll keep\nit a bit simpler.")
+
+
+
