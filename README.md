@@ -63,7 +63,11 @@ From there, just follow the instructions as the script itself tells you! Enjoy!
 **Functions To Use In Analysis Tutorial**
 
 statistics.mean
+
 statistics.median
+
 statistics.mode
+
 statistics.stddev
+
 statistics.variance
