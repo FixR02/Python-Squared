@@ -21,6 +21,7 @@ Make a list, dictionary, tuple, or other standard python data structure to read 
 
 C2:
 Use built-in pandas or numpy functions to do things like remove 0’s and null values where they don’t belong in your dataset.
+(NOTE: There weren't any of these in the script, so I'm not sure where to apply this.)
 
 C3:
 Use at least 5 different built-in Python functions to find out *something* about your data.
@@ -38,7 +39,7 @@ None. This script was written on the latest release of Python 3, and that versio
 Older versions of Python may cause issues. If you already have Python installed on your device, be sure it is up to date; back up
 your other installation if you prefer to use an older version.
 
--
+
 **Instructions**
 
 Download and install Python on your computer by going to [Python's download page](https://www.python.org/downloads/) 
@@ -58,3 +59,11 @@ redirect it there instead) and hit Enter/Return. Your prompt is now where it nee
 so type **python python_squared.py** and hit Enter/Return.
 
 From there, just follow the instructions as the script itself tells you! Enjoy!
+
+**Functions To Use In Analysis Tutorial**
+
+statistics.mean
+statistics.median
+statistics.mode
+statistics.stddev
+statistics.variance
