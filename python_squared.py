@@ -120,7 +120,7 @@ while list_data != 'done':
     list_data = input("\nEnter any number. Put in at least 5, but you can do more. Type 'done' to finish: ")
     
     if list_data != 'done':
-        L.append(list_data)
+        L.append(int(list_data))
         print(L)
 
 
@@ -134,7 +134,7 @@ while list_data != 'done':
     list_data = input("\nEnter a number you put into the data set. Each time you use this, it will remove the first instance of it.\nOr, just enter 'done' to move on: ")
     
     if list_data != 'done':
-        L.remove(list_data)
+        L.remove(int(list_data))
         print(L)
 
 #dicts tutorial, and increasing complexity
@@ -185,7 +185,7 @@ while list_data != 'done':
     list_data = input("\nEnter a number to add, or type 'done' to finish: ")
     
     if list_data != 'done':
-        L.append(list_data)
+        L.append(int(list_data))
         print(L)
         
            
@@ -197,7 +197,7 @@ while list_data != 'done':
     list_data = input("\nEnter a value from the list above to remove, or type 'done' to finish: ")
     
     if list_data != 'done':
-        L.remove(list_data)
+        L.remove(int(list_data))
         print(L)
         
 time.sleep(2)
@@ -235,21 +235,27 @@ time.sleep(3)
 #I meant to give the user more control here, but the ability to input is limited.
 print("Well, we can look for the same mean, median and mode:")
 time.sleep(1)
-print(statistics.mean(L))
+a = statistics.mean(L)
+print(a)
 time.sleep(1)
-print(statistics.median(L))
+b = statistics.median(L)
+print(b)
 time.sleep(1)
-print(statistics.mode(L))
+c = statistics.mode(L)
+print(c)
 input("Press Enter/Return to continue.")
 
 print("Or perhaps how long it is, its standard deviation and variance...")
 
 time.sleep(1)
-print(len(L))
+d = len(L)
+print(d)
 time.sleep(1)
-print(statistics.stddev(L))
+e = statistics.stdev(L)
+print(e)
 time.sleep(1)
-print(statistics.variance(L))
+f = statistics.variance(L)
+print(f)
 input("Press Enter/Return to continue.")
 
 print("Check if a certain value is in the list, reverse its index order... or combine it with another list, like the demo one, then sort it!")
@@ -257,13 +263,14 @@ print("Check if a certain value is in the list, reverse its index order... or co
 time.sleep(1)
 print('22' in L)
 time.sleep(1)
-print('L.reverse()')
-L.reverse()
-print(L)
+R = L.reverse()
+print(R)
 time.sleep(1)
-print(L + demo)
-L.sort
-print(L)
+C = L + demo
+print(C)
+time.sleep(2)
+S = (C.sort)
+print(S)
 time.sleep(1)
 input("Press Enter/Return to continue.")
 
