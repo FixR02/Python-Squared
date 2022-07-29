@@ -117,7 +117,7 @@ print("\nGo and get some data: maybe the height of your family, or your ages, or
 time.sleep(1)
 
 while list_data != 'done':
-    list_data = input("Enter any number. Put in at least 5, but you can do more. Type 'done' to finish: ")
+    list_data = input("\nEnter any number. Put in at least 5, but you can do more. Type 'done' to finish: ")
     
     if list_data != 'done':
         L.append(list_data)
@@ -125,13 +125,13 @@ while list_data != 'done':
 
 
 time.sleep(2)
-print("If you want to remove some data, you can: I'll give you a chance, too.")
+print("\nIf you want to remove some data, you can: I'll give you a chance, too.")
 list_data = ""
 time.sleep(2)
 print(L)
 
 while list_data != 'done':
-    list_data = input("Enter a number you put into the data set. Each time you use this, it will remove the first instance of it.\nOr, just enter 'done' to move on: ")
+    list_data = input("\nEnter a number you put into the data set. Each time you use this, it will remove the first instance of it.\nOr, just enter 'done' to move on: ")
     
     if list_data != 'done':
         L.remove(list_data)
@@ -182,7 +182,7 @@ print("Here's your list as it is now. I'll give you one more chance to change it
 
 #Doing math and data analysis on some user-entered data; one extra chance to change the data being used
 while list_data != 'done':
-    list_data = input("Enter a number to add, or type 'done' to finish: ")
+    list_data = input("\nEnter a number to add, or type 'done' to finish: ")
     
     if list_data != 'done':
         L.append(list_data)
@@ -190,10 +190,11 @@ while list_data != 'done':
         
            
 print(L)
-print("Here's your list again. Remove what you don't need; keep at least 5 numbers.")
+list_data = ""
+print("\nHere's your list again. Remove what you don't need; keep at least 5 numbers.")
 
 while list_data != 'done':
-    list_data = input("Enter a value from the list above to remove, or type 'done' to finish: ")
+    list_data = input("\nEnter a value from the list above to remove, or type 'done' to finish: ")
     
     if list_data != 'done':
         L.remove(list_data)
@@ -201,6 +202,7 @@ while list_data != 'done':
         
 time.sleep(2)
 input("Press Enter/Return to continue.")
+#The actual data analysis part
 print("Now that your data is ready, let's learn... something about it.")
 print("\nPython comes with several modules included in the install,\nand plenty more online made by third parties. We'll use a couple to understand your data.")
 time.sleep(2)
@@ -211,6 +213,70 @@ print("\nThere's a huge list of functions we can use from these modules.\nWe cou
 input("Press Enter/Return to continue.")
 time.sleep(3)
 print("\nDepending on your data and its context it could be useful\nto run any one of these functions and then some. For this tutorial, we'll keep\nit a bit simpler.")
+demo = [1, 11, 6, 15, 85, 30, 7, 2, 45, 30]
+print(demo)
+time.sleep(2)
+print("\nHere I've made a demo list of 10 numbers. Let's use functions to learn about it a bit more.")
+print("\nWe can figure out the mean, median and mode, among other things. \n(Quick note: functions imported from a module need the module name first, dot the function name, \nsuch as time.sleep (the sleep function from the time module).)")
+time.sleep(1)
+print(statistics.mean(demo))
+time.sleep(1)
+print(statistics.median(demo))
+time.sleep(1)
+print(statistics.mode(demo))
+input("Press Enter/Return to continue.")
+#Basic data analysis terminal
+print("\nThat's just to demonstrate what it can do. What can we find out about your list?")
+time.sleep(2)
+print(L)
+print("Here it is again, just in case.")
+
+time.sleep(3)
+#I meant to give the user more control here, but the ability to input is limited.
+print("Well, we can look for the same mean, median and mode:")
+time.sleep(1)
+print(statistics.mean(L))
+time.sleep(1)
+print(statistics.median(L))
+time.sleep(1)
+print(statistics.mode(L))
+input("Press Enter/Return to continue.")
+
+print("Or perhaps how long it is, its standard deviation and variance...")
+
+time.sleep(1)
+print(len(L))
+time.sleep(1)
+print(statistics.stddev(L))
+time.sleep(1)
+print(statistics.variance(L))
+input("Press Enter/Return to continue.")
+
+print("Check if a certain value is in the list, reverse its index order... or combine it with another list, like the demo one, then sort it!")
+
+time.sleep(1)
+print('22' in L)
+time.sleep(1)
+print('L.reverse()')
+L.reverse()
+print(L)
+time.sleep(1)
+print(L + demo)
+L.sort
+print(L)
+time.sleep(1)
+input("Press Enter/Return to continue.")
 
 
-
+time.sleep(2)
+print("\nI'm thankful for you sticking around to try this out!\nI thought to demonstrate my understanding of basic Python concepts\nby teaching them to you in a very Python way.")
+time.sleep(2)
+print("\nThis is only the tip of the iceberg. Python is absolutely full of potential\nand learning, and I hope this was a window for you to look into\nin order to see if it's for you or not.")
+time.sleep(2)
+print("\nI, for one, thought it was fun to make this, even if I could've done a bit better.")
+print("\nI'll leave you with the ability to print whatever you want\nas a parting gift. Or, if you want, you can exit this script, and just type python\ninto your command prompt to open the wide world of Python for yourself to unleash!")
+print("\nIf you decide you like it, maybe I'll see you again out there.\nEither way... thank you!")
+input_tut = ''
+while input_tut != 'quit':
+    input_tut = input("\nEnter something to print, or type 'quit' to exit: ")
+    print(input_tut)
