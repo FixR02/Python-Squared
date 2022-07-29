@@ -68,6 +68,6 @@ statistics.median
 
 statistics.mode
 
-statistics.stddev
+statistics.stdev
 
 statistics.variance
